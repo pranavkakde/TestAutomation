@@ -1,0 +1,19 @@
+package com.test.common;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class BaseFunctions {
+	WebDriver driver;
+	
+	public BaseFunctions(WebDriver test){
+		this.driver = test;
+	}
+	
+	public void typeInInputXpath(WebElement elem, String valueToType) {
+		elem.sendKeys(valueToType);
+	}
+	public void clickXpath(WebElement elem) {
+		elem.click();
+	}
+}
