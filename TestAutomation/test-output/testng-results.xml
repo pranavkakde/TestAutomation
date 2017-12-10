@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My first TestNG test suite" duration-ms="9628" started-at="2017-11-29T13:25:43Z" finished-at="2017-11-29T13:25:52Z">
+  <suite name="Default suite" duration-ms="9258" started-at="2017-12-10T14:19:02Z" finished-at="2017-12-10T14:19:11Z">
     <groups>
     </groups>
-    <test name="Home Page Test" duration-ms="9628" started-at="2017-11-29T13:25:43Z" finished-at="2017-11-29T13:25:52Z">
+    <test name="Default test" duration-ms="9258" started-at="2017-12-10T14:19:02Z" finished-at="2017-12-10T14:19:11Z">
       <class name="com.test.tests.RunTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.tests.RunTest@5034c75a]" name="setUp" is-config="true" duration-ms="7825" started-at="2017-11-29T23:25:35Z" finished-at="2017-11-29T23:25:43Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.test.tests.RunTest@100fc185]" name="setUp" is-config="true" duration-ms="14876" started-at="2017-12-11T00:18:47Z" finished-at="2017-12-11T00:19:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testHomePage()[pri:0, instance:com.test.tests.RunTest@5034c75a]" name="testHomePage" duration-ms="9603" started-at="2017-11-29T23:25:43Z" description="Open Home Page for Test Site" finished-at="2017-11-29T23:25:52Z">
+        <test-method status="PASS" signature="testHomePage()[pri:0, instance:com.test.tests.RunTest@100fc185]" name="testHomePage" duration-ms="9235" started-at="2017-12-11T00:19:02Z" description="Open Home Page for Test Site" finished-at="2017-12-11T00:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.tests.RunTest@5034c75a]" name="tearDown" is-config="true" duration-ms="349" started-at="2017-11-29T23:25:53Z" finished-at="2017-11-29T23:25:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.tests.RunTest@100fc185]" name="tearDown" is-config="true" duration-ms="372" started-at="2017-12-11T00:19:11Z" finished-at="2017-12-11T00:19:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.test.tests.RunTest -->
-    </test> <!-- Home Page Test -->
-  </suite> <!-- My first TestNG test suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

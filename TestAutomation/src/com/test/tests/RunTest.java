@@ -15,10 +15,10 @@ public class RunTest {
     
     @BeforeSuite
     public void setUp() {         
-    	System.setProperty("webdriver.gecko.driver", "E:\\code\\seleniumlib\\geckodriver.exe");
+    	System.setProperty("webdriver.gecko.driver", ".\\lib\\geckodriver.exe");
     	driver = new FirefoxDriver();
     }
-     //this is a test
+     
     //@Parameters({"username","incorrectpassword"})
     @Test(description="Open Home Page for Test Site")
     public void testHomePage() {
