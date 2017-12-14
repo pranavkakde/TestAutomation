@@ -16,4 +16,7 @@ public class BaseFunctions {
 	public void clickXpath(WebElement elem) {
 		elem.click();
 	}
+	public void typeText(WebElement elem, String value) {
+		elem.sendKeys(value);;
+	}
 }
