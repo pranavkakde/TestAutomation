@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Java TestNG Test Suite" verbose="1" >
+   <listeners>
+      <listener class-name = "com.test.common.TestLogger" />
+   </listeners>
+  <test name="Home Page Test">
+    <packages>
+      <package name="com.test.tests" />
+   </packages>
+ </test>
+</suite>

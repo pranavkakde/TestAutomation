@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://automationpractice.com/index.php/",
+    "browserSettings":{
+        "browserType": "firefox",
+        "headless": true
+    }
+}
