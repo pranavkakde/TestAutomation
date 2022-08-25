@@ -1,3 +1,6 @@
+[![Docker build](https://github.com/pranavkakde/TestAutomation/actions/workflows/docker-image.yml/badge.svg)](https://github.com/pranavkakde/TestAutomation/actions/workflows/docker-image.yml)
+
+
 # TestAutomation
 This is a Test Automation project using Selenium, Java and TestNG. It is built using Page Object pattern.
 
