@@ -19,7 +19,6 @@ jobs:
     - name: Docker Login
       uses: docker/login-action@v2.0.0
       with:
-        registry: pranavkakde
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN  }}
         logout: true
