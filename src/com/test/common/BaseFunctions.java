@@ -47,9 +47,6 @@ public class BaseFunctions {
 					//Do not handle the exception
 				}
 				if (found) {
-					System.out.println("Found element");
-					// JavascriptExecutor js = (JavascriptExecutor) driver;
-					// js.executeScript("arguments[0].scrollIntoView(true);", elem);
 					break;
 				}
 				Thread.sleep(1000);

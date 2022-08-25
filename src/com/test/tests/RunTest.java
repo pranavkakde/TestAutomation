@@ -27,7 +27,7 @@ public class RunTest {
         HomePage home = new HomePage(driver);
         Assert.assertEquals(true, home.openURL(configManager.config().getBaseUrl().toString()));
         Reporter.log("Application Launched successfully.");
-        Assert.assertEquals(home.getHomeTitle(), "My Store  ");
+        Assert.assertEquals(home.getHomeTitle(), "My Store");
         Reporter.log("Home page loaded successfully.");
         home.typeInSearch("Shoe");
         home.clickOnSearch();

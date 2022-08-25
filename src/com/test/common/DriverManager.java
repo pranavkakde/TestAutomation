@@ -39,8 +39,16 @@ public class DriverManager {
     }
     private void setUpDriver(){
 		config = ConfigManager.getInstance();
+		String gridUrl = System.getProperty("gridUrl");
+		if((gridUrl==null) || gridUrl.isEmpty()){
+			gridUrl = config.config().getGridUrl();
+		}
+		String browserName = System.getProperty("browserName");
+		if((browserName==null) || (browserName.isEmpty())){
+			browserName = config.config().getBrowserSettings().getBrowserType().toLowerCase();
+		}
 		String headless = config.config().getBrowserSettings().getHeadless().toString();
-		switch(config.config().getBrowserSettings().getBrowserType().toLowerCase()){
+		switch(browserName){
 			case "chrome":
 				ChromeOptions options = new ChromeOptions();
 				List<String> arguments = new ArrayList<String>();
@@ -51,7 +59,7 @@ public class DriverManager {
 				arguments.add("--window-size=1920,1080");
 				arguments.add("--user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0 Safari/537.36");
 				options.addArguments(arguments);		
-				driver = WebDriverManager.chromedriver().capabilities(options).create();
+				driver = WebDriverManager.chromedriver().capabilities(options).remoteAddress(gridUrl).create();
 				Reporter.log("Created Web Driver for Chrome");
 			break;
 			case "firefox":
