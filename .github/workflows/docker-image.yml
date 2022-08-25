@@ -31,6 +31,6 @@ jobs:
         file: ./Dockerfile
         builder: ${{ steps.buildx.outputs.name }}
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/seleniumframeworkjava:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/seleniumframeworkjava:latest
 
 
