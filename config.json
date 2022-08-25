@@ -1,7 +1,8 @@
 {
     "baseUrl": "http://automationpractice.com/index.php/",
+    "gridUrl": "http://127.0.0.1:4444",
     "browserSettings":{
-        "browserType": "firefox",
+        "browserType": "chrome",
         "headless": true
     }
 }

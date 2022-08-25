@@ -2,6 +2,7 @@ package com.test.common;
 
 public class Config{
     private String baseUrl = "";
+    private String gridUrl = "";
     private BrowserSettings browserSettings = null;
     public Config(String baseUrl, BrowserSettings browserSettings){
         this.baseUrl = baseUrl;
@@ -21,5 +22,11 @@ public class Config{
     }
     public void setBrowserSettings(BrowserSettings browserSettings){
         this.browserSettings = browserSettings;
+    }
+    public void setGridUrl(String gridurl){
+        this.gridUrl = gridurl;
+    }
+    public String getGridUrl(){
+        return this.gridUrl;
     }
 }
