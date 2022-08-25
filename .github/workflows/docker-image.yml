@@ -14,13 +14,24 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag pranavkakde/seleniumframeworkjava:$(date +%s)
+#     - name: Build the Docker image
+#       run: docker build . --file Dockerfile --tag pranavkakde/seleniumframeworkjava:$(date +%s)
     - name: Docker Login
       uses: docker/login-action@v2.0.0
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN  }}
         logout: true
-    - name: Push Docker image
-      run: docker push pranavkakde/seleniumframeworkjava:$(date +%s) 
+#     - name: Push Docker image
+#       run: docker push pranavkakde/seleniumframeworkjava:$(date +%s) 
+    - name: Build and push
+      uses: docker/build-push-action@v2
+      with:
+        context: ./
+        file: ./Dockerfile
+        builder: ${{ steps.buildx.outputs.name }}
+        push: true
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/seleniumframeworkjava:latest
+        cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/seleniumframeworkjava:buildcache
+        cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/seleniumframeworkjava:buildcache,mode=max
+
