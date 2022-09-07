@@ -38,7 +38,7 @@ All the compiled code will be available in ***target*** folder.
 
 
 ```bash
-mvn test ./pom.xml -DgridUrl=http://<IP Address of Selenium Grid>:4444 -DbrowserName=firefox
+mvn test -DgridUrl=http://<IP Address of Selenium Grid>:4444 -DbrowserName=firefox
 ```
 
 If ```-DgridUrl``` is not provided, default gridUrl as provided in `config.json`.
